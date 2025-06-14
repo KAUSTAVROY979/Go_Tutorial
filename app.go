@@ -15,6 +15,6 @@ func investment_calculator() float64 {
 	var returnRate = 5.5
 	var years = 10
 
-	return float64(investedAmount) + math.Pow(1+returnRate/100, float64(years))
+	return float64(investedAmount) * math.Pow(1+returnRate/100, float64(years))
 
 }
